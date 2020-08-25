@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "../../lib/van/field",
+    "van-button":"../../lib/van/button",
+    "van-toast": "../../lib/vant/toast"
+  },
+  "navigationBarTitleText": "欢迎注册"
+}

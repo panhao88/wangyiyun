@@ -1,0 +1,37 @@
+<!--conponents/index/recommend/recommend.wxml-->
+<view class="box1">
+	<view class="todo" bindtap="toto1">
+		<view class="box2">
+			<image src="../../img/tuijian.png" class="img"></image>
+		</view>
+		<view>每日推荐</view>
+	</view>
+	<view class="todo">
+
+		<view class="box2" >
+			<image src="../../img/gedan.png" class="img" bindtap="tototo"></image>
+		</view>
+		<view>歌单</view>
+	</view>
+	<view class="todo">
+
+		<view class="box2">
+			<image src="../../img/paihang.png" class="img" bindtap="tototo1"></image>
+		</view>
+		<view>排行榜</view>
+	</view>
+	<view class="todo">
+
+		<view class="box2">
+			<image src="../../img/diantai.png" class="img"></image>
+		</view>
+		<view>电台</view>
+	</view>
+	<view class="todo">
+
+		<view class="box2">
+			<image src="../../img/zhibo.png" class="img"></image>
+		</view>
+		<view>直播</view>
+	</view>
+</view>

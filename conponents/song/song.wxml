@@ -1,0 +1,15 @@
+<!--conponents/index/song/song.wxml-->
+<view>
+	<view class="box1">
+		<view class="box2">宝藏歌单，值得聆听</view>
+		<view class="box3" bindtap="tototo">更多歌单</view>
+	</view>
+	<view class="bot1">
+		<view wx:for="{{gedan}}" wx:key="index" style="width:30%" bindtap="godetail" data-item="{{item}}">
+      <view>
+				<image src="{{item.picUrl}}" class="img"></image>
+        <view class="bot2">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+/* conponents/index/Rotation/Rotation.wxss */
+.box{
+  width: 100%;
+  height: 400rpx;
+  text-align: center;
+}
+.box2{
+  width: 95%;
+  height: 400rpx  !important;
+  margin-right: 5rpx;
+}

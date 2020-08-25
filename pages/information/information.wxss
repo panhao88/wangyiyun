@@ -1,0 +1,25 @@
+/* pages/information/information.wxss */
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.todo{
+  color: red;
+  border-bottom: 4rpx solid red;
+}
+.boxx{
+  margin-top: 20rpx;
+}
+.denglu{
+  width: 250rpx !important;
+}
+.zhuce{
+  width: 250rpx !important;
+}
+.boxxx{
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,36 @@
+<!--pages/my/my.wxml-->
+<view>
+	<view class="box" wx:if="{{userid === ''}}">
+		<view>亲，你还没有登录</view>
+		<view>
+			<van-button type="primary" custom-class="butt" bindtap="goto">去登录</van-button>
+		</view>
+
+	</view>
+	<view wx:if="{{userid !== ''}}">
+		<view class="bot">
+			<view class="bot1">
+				<view></view>
+				<view>签到</view>
+			</view>
+		<view class="bot2">
+			<view>
+				<view>我的消息</view>
+			</view>
+			<view>
+				<view>我的好友</view>
+			</view>
+			<view>
+				<view>个人主页</view>
+			</view>
+			<view>
+				<view>个人装扮</view>
+			</view>
+		</view>
+		</view>
+		<view class="box">
+			<van-button type="danger" bindtap="gotuichu" custom-class="butt">退出登录</van-button>
+		</view>
+
+	</view>
+</view>

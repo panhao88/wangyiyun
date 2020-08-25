@@ -1,0 +1,28 @@
+/* pages/my/my.wxss */
+.box{
+  width: 100%;
+  display: flex;
+  margin-top: 200rpx;
+  flex-direction: column;
+  align-items: center;
+  font-size: 45rpx;
+  color: red;
+}
+.butt{
+  width: 220rpx !important;
+  border-radius: 30rpx !important;
+}
+.bot{
+  width: 100%;
+  height: 300rpx;
+  background: red;
+}
+.bot1{
+  display: flex;
+  justify-content: space-around;
+}
+.bot2{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}

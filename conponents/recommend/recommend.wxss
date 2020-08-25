@@ -1,0 +1,27 @@
+/* conponents/index/recommend/recommend.wxss */
+.img{
+  width: 50rpx;
+  height: 50rpx;
+}
+.box1{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.box2{
+  width: 70rpx;
+  height: 70rpx;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}

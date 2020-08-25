@@ -1,0 +1,16 @@
+/* pages/register/register.wxss */
+.fasong{
+  width: 190rpx !important;
+}
+.denglu{
+  width: 250rpx !important;
+}
+.zhuce{
+  width: 250rpx !important;
+}
+.boxxx{
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,19 @@
+<!--pages/register/register.wxml-->
+<view>
+	<view>
+		<van-cell-group>
+			<van-field label="电话:" value="{{phone}}" bind:input="phone" required placeholder="请输入电话" clearable="ture" left-icon="phone-o" />
+			<van-field label="密码:" value="{{password}}" bind:input="password" required placeholder="请输入密码" clearable="ture" left-icon="friends-o" />
+			<van-cell-group>
+				<van-field left-icon="chat-o"  bind:input="captcha" required value="{{ captcha }}" center clearable label="验证码:" placeholder="请输入验证码" border="{{ false }}" use-button-slot>
+					<van-button slot="button" size="small" type="primary"  custom-class="fasong" bindtap="fasongyanzhengma" disabled='{{disabled}}'>{{time}}</van-button>
+				</van-field>
+			</van-cell-group>
+			<van-field label="昵称:" value="{{nickname}}" bind:input="nickname" required placeholder="请输入昵称" clearable="ture" left-icon="manager-o" />
+		</van-cell-group>
+	</view>
+  <view class="boxxx">
+  <van-button type="danger" custom-class="denglu" bindtap="godenglu">前往登录</van-button>
+  <van-button type="warning" custom-class="zhuce" bindtap="gozhuce">立即注册</van-button>
+</view>
+</view>

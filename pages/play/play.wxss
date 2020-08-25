@@ -1,0 +1,82 @@
+.bg{
+  background-size: 100% 100%;
+  background-position: no-repeat;
+  filter: blur(50rpx);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.box1{
+  width: 100%;
+  align-content: center;
+  z-index: 1;
+}
+.box2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 40rpx;
+}
+
+.box3{
+  font-size: 30rpx;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.box4{
+  margin-top: 80rpx;
+  width: 100%;
+  height: 700rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.word{
+  color: red;
+  font-size: 38rpx;
+}
+
+.img{
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+}
+.box5{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+}
+.box5 slider{
+  flex: 1;
+}
+.toto11{
+  width: 45rpx;
+  height: 45rpx;
+}
+.toto111{
+  width: 45rpx;
+  height: 45rpx;
+}
+.toto1{
+  width: 60rpx;
+  height: 60rpx;
+}
+.toto2{
+  width: 80rpx;
+  height: 80rpx;
+}
+.dibu{
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+<!--conponents/index/Rotation/Rotation.wxml-->
+<view class="box">
+	<swiper class="box1" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}" circular="{{true}}">
+		<swiper-item  wx:for="{{lunbotu}}" wx:key="index">
+			<view class="bot">
+				<image class="box2" src="{{item.pic}}" mode="widthFix"></image>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>

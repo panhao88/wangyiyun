@@ -1,0 +1,4 @@
+<view class="box">
+  <view>手机号登录</view>
+  <view>邮箱登录</view>
+</view>

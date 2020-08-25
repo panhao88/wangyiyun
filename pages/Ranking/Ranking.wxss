@@ -1,0 +1,49 @@
+/* pages/Ranking/Ranking.wxss */
+.box1{
+  margin-top: 20rpx;
+  width: 100%;
+  
+}
+.img{
+  width: 200rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+}
+.box2{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.box3{
+  font-size: 30rpx;
+}
+.bot1{
+  display: flex;
+  justify-content: space-around;
+}
+.sheet_f{
+  width: 31%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.sheet_g image{
+  width: 100%;
+  height: 220rpx;
+  border-radius: 18rpx;
+}
+.sheet_x{
+  width: 64%;
+  line-height: 58rpx;
+  display: flex;
+  align-items: center;
+}
+.sheet_w{
+    width: 80%;
+    color: #666666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}

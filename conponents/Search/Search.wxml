@@ -1,0 +1,13 @@
+<view>
+	<view class="box">
+		<view class="box1">音乐馆</view>
+		<view class="box2">
+			<view class="box3">
+				<image src="../../img/sousuo.png" style="width:60rpx;height:60rpx"></image>
+			</view><input class="inpu" placeholder="搜索"></input>
+		</view>
+		<view class="box4">
+			<image src="../../img/yingyue.png" style="width:70rpx;height:70rpx"></image>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,97 @@
+/* pages/square/square.wxss */
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+display: inline-block;
+ margin-left: 20rpx;
+ margin-top: 20rpx;
+}
+.box1{
+  width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.todo{
+  color: red;
+  border-bottom: 4rpx solid red;
+}
+.active{
+  color: black;
+}
+
+swiper-item image.active {
+   /*允许我们对元素进行旋转、缩放、移动或倾斜*/
+  transform: none;
+  /* 逐步改变图片的宽度从 100px 到 300px： */
+  transition: all 0.2s ease-in 0s;
+} 
+swiper-item image.caonima {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}
+.swiperClass{
+  height: 460rpx;
+}
+.top{
+  width: 750rpx;
+  height: 450rpx;
+  padding-top: 10rpx;
+  margin-top: 30rpx;
+}
+.wahaha{
+  width: 100%;
+  height: 450rpx;
+ border-radius: 10rpx;
+  position: relative;
+  background: pink;
+}
+.box3{
+  font-size: 25rpx;
+  color: lightcoral;
+  text-align: center;
+}
+.bot1{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 20rpx;
+  margin-bottom: 100rpx;
+  margin-top: -250rpx;
+}
+.ghgh{
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.kkk{
+  position: absolute;
+  margin-left: 110rpx;
+  margin-top: 10rpx;
+  color: beige;
+  font-size: 30rpx;
+  z-index: 1;
+}
+.img{
+  position: relative;
+  width: 230rpx;
+  height: 260rpx;
+  border-radius: 20rpx;
+}
+.bot2{
+  width: 230rpx;
+  font-size: 30rpx;
+}
+.xxx{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+.imggg{
+  width: 30rpx;
+  height: 30rpx;
+}

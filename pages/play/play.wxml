@@ -1,0 +1,60 @@
+<!--pages/play/play.wxml-->
+<!-- 头部 -->
+<view class="bg">
+	<image src="{{songs[indexx].al.picUrl}}"></image>
+</view>
+<view>
+	<view class="box1">
+		<view class="box2">{{songs[indexx].name}}</view>
+		<view wx:for="{{songs[indexx].ar}}" wx:key="index" class="box3">
+			<view>{{item.name}}</view>
+		</view>
+	</view>
+	<view>
+		<view wx:if="{{haha === false}}" class="box4">
+			<image src="{{songs[indexx].al.picUrl}}" class="img" bindtap="gogeci"></image>
+		</view>
+		<view wx:if="{{haha === true}}">
+			<scroll-view scroll-y="true" style="position:absolute;height:70%">
+				<view style="position:relative;top:50%">
+					<block wx:for="{{wordlist}}" wx:key="index">
+						<view style=" min-height: 100rpx;display: flex;justify-content: center; width: 100%;" class="{{index  === wordindex ? 'word':''}}">{{item.word}}</view>
+					</block>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="box5">
+		<text>{{startTime}}</text>
+		<slider value="{{value}}" max="{{max}}" bindchanging="binding" bindchange="change"></slider>
+		<text>{{endTime}}</text>
+	</view>
+	<view class="dibu">
+		<view wx:if="{{didi === 0}}">
+			<image src="../../img/shunxu.png" class="toto11" bindtap="didi1"></image>
+		</view>
+		<view wx:if="{{didi === 1}}">
+			<image src="../../img/suiji.png" class="toto11" bindtap="didi2"></image>
+		</view>
+		<view wx:if="{{didi === 2}}">
+			<image src="../../img/danqu.png" class="toto11" bindtap="didi3"></image>
+		</view>
+		<view>
+			<image src="../../img/shangyiqu.png" class="toto1" bindtap="shangyiqu"></image>
+		</view>
+		<view>
+			<view wx:if="{{nima === true}}">
+				<image src="../../img/bofang.png" class="toto2" bindtap="bofang"></image>
+			</view>
+			<view wx:if="{{ nima === false}}">
+				<image src="../../img/zanting.png" class="toto2" bindtap="zanting"></image>
+			</view>
+		</view>
+		<view>
+			<image src="../../img/xiayiqu.png" class="toto1"></image>
+		</view>
+		<view>
+			<image src="../../img/gengduo.png" class="toto111"></image>
+		</view>
+	</view>
+</view>

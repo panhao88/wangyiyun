@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "Search":"../../conponents/Search/Search",
+    "Rotation":"../../conponents/Rotation/Rotation",
+    "recommend":"../../conponents/recommend/recommend",
+    "song":"../../conponents/song/song",
+    "disc":"../../conponents/disc/disc",
+    "newsong":"../../conponents/newsong/newsong"
+    
+  },
+  "van-search":"../../lib/fly/vant/search"
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "van-button":"../../../lib/fly/vant/button",
+  "van-search":"../../../lib/fly/vant/search"
+}

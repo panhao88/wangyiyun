@@ -1,0 +1,33 @@
+/* conponents/index/Search/Search.wxss */
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 20rpx;
+}
+.inpu{
+  width: 400rpx;
+  height: 60rpx;
+  background: gainsboro;
+  border: solid 1rpx black;
+  border-radius: 60rpx;
+  padding-left: 70rpx;
+  border:none;
+}
+.box1{
+  font-weight: 800;
+}
+.box2{
+  width: 60%;
+  display: flex;
+}
+.box3{
+  position: absolute;
+  padding-left: 10rpx;
+}
+.box4{
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}

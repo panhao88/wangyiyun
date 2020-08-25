@@ -1,0 +1,24 @@
+<!--pages/singer/singer.wxml-->
+<view>
+	<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+		<view class="scroll-view-item_H" wx:for="{{typeList}}" wx:key="index">
+			<view class="{{index === aktav ? 'didi': ''}}" bindtap="didi1" data-index="{{index}}">{{item.name}}</view>
+		</view>
+	</scroll-view>
+</view>
+<view>
+	<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+		<view class="scroll-view-item_H" wx:for="{{initials}}" wx:key="index">
+			<view class="{{index === aklove ? 'didi':''}}" bindtap="didi2" data-index="{{index}}">{{item.name}}</view>
+		</view>
+	</scroll-view>
+</view>
+<view wx:if="{{nima !== 0}}">
+	<view wx:for="{{nima}}" wx:key="index">
+		<view class="you1">
+			<view><image src="{{item.picUrl}}" class="imm"></image></view>
+			<view class="you2">{{item.name}}</view>
+		</view>
+	</view>
+</view>
+<view wx:else="{{nima === 0 }}">暂无数据</view>

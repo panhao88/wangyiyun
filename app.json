@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Ranking/Ranking",
+    "pages/listdetail/listdetail",
+    "pages/square/square",
+    "pages/Recommended/Recommended",
+    "pages/my/my",
+    "pages/register/register",
+    "pages/play/play",
+    "pages/singer/singer",
+    "pages/information/information",
+    "pages/login/login",
+    "pages/detail/detail"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f48",
+    "navigationBarTitleText": "网易云",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#f48",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/fangzi1.png",
+        "selectedIconPath": "img/fangzi2.png"
+      },
+      {
+        "pagePath": "pages/singer/singer",
+        "text": "歌手",
+        "iconPath": "img/erji1.png",
+        "selectedIconPath": "img/erji2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/wode1.png",
+        "selectedIconPath": "img/wode2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio", "location"]
+}

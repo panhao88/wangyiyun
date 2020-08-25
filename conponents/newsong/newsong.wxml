@@ -1,0 +1,15 @@
+<!--conponents/index/newsong/newsong.wxml-->
+<view>
+	<view class="box1">
+		<view class="box2">音乐新势力</view>
+		<view class="box3">新音乐</view>
+	</view>
+	<view class="bot1">
+		<view wx:for="{{xinyinyue}}" wx:key="index" style="width:30%" bindtap="godetail" data-item="{{item}}">
+      <view>
+				<image src="{{item.album.picUrl}}" class="img"></image>
+        <view class="bot2">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+</view>

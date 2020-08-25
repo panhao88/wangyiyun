@@ -1,0 +1,29 @@
+<!--pages/information/information.wxml-->
+<view class="box">
+	<view class="{{didi === 0 ? 'todo':''}}" bindtap="goto1">手机号登录</view>
+	<view class="{{didi === 1 ? 'todo':''}}" bindtap="goto2">邮箱登录</view>
+</view>
+<view wx:if="{{didi === 0}}">
+	<view class="boxx">
+		<van-cell-group>
+			<van-field  value="{{phone}}" bind:input="phone" label="手机号:" placeholder="请输入手机号" clearable="ture" left-icon="phone-o" />
+			<van-field value="{{password}}" bind:input="password" label="密码:" placeholder="请输入密码" clearable="ture" left-icon="friends-o" />
+		</van-cell-group>
+	</view>
+	<view class="boxxx">
+		<van-button type="danger" custom-class="denglu" bindtap="godenglu">立即登录</van-button>
+		<van-button type="warning" custom-class="zhuce" bindtap="gozhuce">立即注册</van-button>
+	</view>
+</view>
+<view wx:if="{{didi === 1}}">
+	<view class="boxx">
+		<van-cell-group>
+			<van-field label="邮箱:" placeholder="请输入网易邮箱" clearable="ture" left-icon="phone-o" />
+			<van-field label="密码:" placeholder="请输入网易密码" clearable="ture" left-icon="chat-o" />
+		</van-cell-group>
+	</view>
+	<view class="boxxx">
+		<van-button type="danger" custom-class="denglu">立即登录</van-button>
+		<van-button type="warning" custom-class="zhuce" bindtap="gozhuce">立即注册</van-button>
+	</view>
+</view>

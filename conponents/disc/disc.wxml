@@ -1,0 +1,28 @@
+<!--conponents/index/disc/disc.wxml-->
+<view>
+	<view class="box">
+		<view class="box1">
+			<view class="todo {{didi === 0 ? 'haha':''}}" bindtap="goto1">新歌</view>
+			<view class="todo {{didi === 1 ? 'haha':''}}" bindtap="goto2">新碟</view>
+		</view>
+		<view class="box2">更多歌碟</view>
+	</view>
+	<view wx:if="{{didi === 0}}">
+		<view class="box3">
+			<view wx:for="{{xinge}}" wx:key="index" style="30%" bindtap="godetail1" data-item="{{item}}">
+				<view>
+					<image src="{{item.picUrl}}" class="img"></image>
+					<view class="box4">{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{didi === 1}}" class="bot1">
+		<view wx:for="{{gedie}}" wx:key="index" style="30%" bindtap="godetail2" data-item="{{item}}">
+      <view>
+        <image src="{{item.blurPicUrl}}" class="img1"></image>
+        <view class="bot2">{{item.name}}</view>
+      </view>
+    </view>
+	</view>
+</view>

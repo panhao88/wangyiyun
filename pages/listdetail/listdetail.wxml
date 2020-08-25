@@ -1,0 +1,66 @@
+<!--pages/listdetail/listdetail.wxml-->
+<!--pages/detail/detail.wxml-->
+<view>
+	<view class="box1">
+		<view>
+			<image src="{{playlist.coverImgUrl}}" class="iimmgg"></image>
+		</view>
+		<view class="box2">
+			<image src="{{creator.avatarUrl}}" style="width:200rpx;height:200rpx"></image>
+		</view>
+		<view class="box3">歌手：{{creator.nickname}}</view>
+		<view class="box4">{{playlist.description}}</view>
+		<view class="box5">
+			<view>
+				<view>
+					<image src="../../img/xiaoxi.png" style="width:60rpx;height:60rpx"></image>
+				</view>
+				<view class="zi">888</view>
+			</view>
+			<view>
+				<view>
+					<image src="../../img/lianjie (1).png" style="width:60rpx;height:60rpx"></image>
+				</view>
+				<view class="zi">888</view>
+			</view>
+			<view>
+				<view>
+					<image src="../../img/xiazai.png" style="width:60rpx;height:60rpx"></image>
+				</view>
+				<view class="zi">下载</view>
+			</view>
+			<view>
+				<view>
+					<image src="../../img/duoxuan.png" style="width:60rpx;height:60rpx"></image>
+				</view>
+				<view class="zi">多选</view>
+			</view>
+		</view>
+	</view>
+	<view class="boxx">
+		<view class="box6">
+			<view class="box6a">播放全部{{songs.length}}首歌曲</view>
+			<view class="box7">收藏</view>
+		</view>
+		<view wx:for="{{songs}}" wx:key="index" bindtap="gobofang"   data-index="{{index}}">
+			<view class="ttt1">
+				<view class="xxx1">
+					<view class="xxx2">
+						<view class="yyy1">{{index + 1}}</view>
+						<view class="vvv1">{{item.name}} </view>
+						<view class="jjj1">{{item.alia}}</view>
+					</view>
+					<view class="mmm1">
+						<view>
+							<image src="../../img/gengduo (2).png" style="width:50rpx;height:50rpx"></image>
+						</view>
+						<view>
+							<image src="../../img/gengduo (1).png" style="width:50rpx;height:50rpx"></image>
+						</view>
+					</view>
+				</view>
+				<view class="lll1">{{item.ar[0].name}}</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,59 @@
+<view>
+	<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+		<view class="box1">
+			<view class="{{didi === 0 ? 'todo':''}}" bindtap="haha1">推荐</view>
+			<view class="{{didi === 1 ? 'todo': ''}}" bindtap="haha2">官方</view>
+			<view class="{{didi === 2 ? 'todo' : ''}}" bindtap="haha3">精品</view>
+		</view>
+	</scroll-view>
+	<view wx:if="{{didi === 0}}" class="top">
+		<swiper class='swiperClass' indicator-dots='{{false}}' style='height:784rpx;width:100%' circular previous-margin="140rpx" next-margin="140rpx" bindchange="bindchange" autoplay="{{autoplay}}" current='{{swiperCurrent}}'>
+			<view wx:for="{{song1}}" wx:key="index" bindtap="didi1" data-item="{{item}}" >
+				<swiper-item>
+					<image src="{{item.coverImgUrl}}" class="wahaha {{swiperIndex === index ? 'active':'caonima'}}" mode='aspectFill'></image>
+					<view class="box3">{{item.name}}</view>
+				</swiper-item>
+			</view>
+		</swiper>
+		<view class="bot1">
+			<view wx:for="{{song2}}" wx:key="index" style="width:30%" bindtap="didi2" data-item="{{item}}">
+				<view>
+					<view class="kkk">
+						<image src="../../img/gengduo (2).png" class="imggg"></image>{{item.playCount}}
+					</view>
+					<image src="{{item.coverImgUrl}}" class="img"></image>
+					<view class="bot2">{{item.name}}</view>
+				</view>
+			</view>
+			<view class="xxx">亲，暂时没有数据了哦</view>
+		</view>
+	</view>
+	<view wx:if="{{didi === 1}}">
+		<view class="ghgh">
+			<view wx:for="{{playlists1}}" wx:key="index" style="width:30%" bindtap="didi3" data-item="{{item}}">
+				<view>
+					<view class="kkk">
+						<image src="../../img/gengduo (2).png" class="imggg"></image>{{item.playCount}}
+					</view>
+					<image src="{{item.coverImgUrl}}" class="img"></image>
+					<view class="bot2">{{item.name}}</view>
+				</view>
+			</view>
+			<view class="xxx">亲，暂时没有数据了哦</view>
+		</view>
+	</view>
+  	<view wx:if="{{didi === 2}}">
+		<view class="ghgh">
+			<view wx:for="{{playlists}}" wx:key="index" style="width:30%" bindtap="didi4" data-item="{{item}}">
+				<view>
+					<view class="kkk">
+						<image src="../../img/gengduo (2).png" class="imggg"></image>{{item.playCount}}
+					</view>
+					<image src="{{item.coverImgUrl}}" class="img"></image>
+					<view class="bot2">{{item.name}}</view>
+				</view>
+			</view>
+			<view class="xxx">亲，暂时没有数据了哦</view>
+		</view>
+	</view>
+</view>

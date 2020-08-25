@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-field": "../../lib/van/field",
+    "van-button":"../../lib/van/button"
+  },
+  "navigationBarTitleText": "个人资料"
+}

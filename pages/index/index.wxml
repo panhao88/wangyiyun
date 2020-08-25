@@ -1,0 +1,24 @@
+<view>
+  <Search></Search>
+</view>
+<view>
+  <Rotation lunbotu="{{lunbotu}}"></Rotation>
+</view>
+<view>
+  <recommend></recommend>
+</view>
+<view>
+ <song gedan="{{gedan}}"></song>
+</view>
+<view>
+  <disc gedie="{{gedie}}" xinge="{{xinge}}"></disc>
+</view>
+<view>
+  <newsong xinyinyue="{{xinyinyue}}"></newsong>
+</view>
+<view>
+  <station diantai="{{diantai}}"></station>
+</view>
+<view>
+  <program jiemu="{{jiemu}}"></program>
+</view>
